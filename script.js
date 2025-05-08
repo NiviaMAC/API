@@ -27,7 +27,7 @@ $btn_get_facts.addEventListener('click', async() => {
     console.log(photo_object[0].url)
     console.log(photo_object[0].width)
     console.log(photo_object[0].height)
-    $fatos_p.innerText - fact_object.fact.trim()//.fact é o texto dentro do objeto e o .trim trata do espaçamento e ordem dos elementos.
+    $fatos_p.innerText = fact_object.fact.trim()//.fact é o texto dentro do objeto e o .trim trata do espaçamento e ordem dos elementos.
     $foto.src = photo_object[0].url//o $ é uma forma de organização com o objetivo de identificar que estou chamando lá do HTML.
     //No objeto photo, o  índice é zero e vou buscar - no único  elemento que  há no  objeto, a url. Caso eu não dê esses detalhes,
     //lá no aplicativo do  inspecionar, dará  erro.
