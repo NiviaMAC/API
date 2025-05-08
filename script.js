@@ -11,6 +11,8 @@ let $foto = document.getElementById('photo')
 
 
 $btn_get_facts.addEventListener('click', async() => {
+    $fatos_p.innerText = 'Carregando...'
+    $foto.src = 'imagens/cat_mexendo.gif'
     
     //Requisição dos fatos
     let fact_response = await(fetch(URL_FACTS))
@@ -30,3 +32,5 @@ $btn_get_facts.addEventListener('click', async() => {
     //No objeto photo, o  índice é zero e vou buscar - no único  elemento que  há no  objeto, a url. Caso eu não dê esses detalhes,
     //lá no aplicativo do  inspecionar, dará  erro.
 })
+
+//Atenção: favicon - ícones para baixar; e gif vai trazer um movimento para salvar na pasta
